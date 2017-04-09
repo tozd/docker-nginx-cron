@@ -1,4 +1,4 @@
-FROM tozd/nginx-mailer
+FROM tozd/nginx-mailer:ubuntu-trusty
 
 ENV MAILTO=
 
