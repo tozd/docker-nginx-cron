@@ -1,4 +1,4 @@
-# tozd/docker-cron
+# tozd/nginx-cron
 
 <https://gitlab.com/tozd/docker/nginx-cron>
 
