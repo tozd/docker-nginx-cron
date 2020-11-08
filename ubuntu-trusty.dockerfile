@@ -1,4 +1,4 @@
-FROM tozd/nginx-mailer:ubuntu-trusty
+FROM registry.gitlab.com/tozd/docker/nginx-mailer:ubuntu-trusty
 
 ENV MAILTO=
 

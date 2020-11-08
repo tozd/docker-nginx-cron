@@ -1,4 +1,4 @@
-FROM tozd/nginx-mailer:ubuntu-focal
+FROM registry.gitlab.com/tozd/docker/nginx-mailer:ubuntu-focal
 
 ENV MAILTO=
 

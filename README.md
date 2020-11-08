@@ -2,6 +2,13 @@
 
 <https://gitlab.com/tozd/docker/nginx-cron>
 
+Available as:
+
+* [`tozd/nginx-cron`](https://hub.docker.com/r/tozd/nginx-cron)
+* [`registry.gitlab.com/tozd/docker/nginx-cron`](https://gitlab.com/tozd/docker/nginx-cron/container_registry)
+
+## Description
+
 Image extending [tozd/nginx-mailer](https://gitlab.com/tozd/docker/nginx-mailer) image to add support for cron jobs.
 
 You should set `MAILTO` environment variable to an e-mail address to which output from cron jobs should be send.

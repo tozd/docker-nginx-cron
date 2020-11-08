@@ -1,4 +1,4 @@
-FROM tozd/nginx-mailer:ubuntu-bionic
+FROM registry.gitlab.com/tozd/docker/nginx-mailer:ubuntu-bionic
 
 ENV MAILTO=
 
