@@ -20,6 +20,7 @@ See also [`tozd/cron`](https://gitlab.com/tozd/docker/cron).
 - `ubuntu-bionic`: cron 3.0pl1
 - `ubuntu-focal`: cron 3.0pl1
 - `ubuntu-jammy`: cron 3.0pl1
+- `ubuntu-noble`: cron 3.0pl1
 
 ## Variables
 
