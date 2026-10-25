@@ -1,0 +1,14 @@
+/var/log/nginx/*.log {
+	daily
+	missingok
+	rotate 14
+	compress
+	delaycompress
+	notifempty
+	create 0640 www-data adm
+	sharedscripts
+	postrotate
+		# nginx does not run as a system service, so it is signaled directly to reopen its log files.
+		[ ! -s /run/nginx.pid ] || kill -USR1 "$(cat /run/nginx.pid)"
+	endscript
+}

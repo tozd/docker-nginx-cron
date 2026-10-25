@@ -41,8 +41,13 @@ For it to work, you should set `ADMINADDR` environment variable to an e-mail add
 go, and `REMOTES` to the e-mail relay server this image should be using to send e-mails.
 
 When `cron` daemon runs, it stores its environment into `/dev/shm/cron-environment` file.
-You cron scripts can then source this file (`. /dev/shm/cron-environment`) to gain access
+Your cron scripts can then source this file (`. /dev/shm/cron-environment`) to gain access
 to environment variables provided to Docker container. Only root processes can access this file.
+
+The image runs [logrotate](https://github.com/logrotate/logrotate) daily as a cron job. Log files in `/var/log/nginx`
+are rotated daily and kept for 14 days, after which nginx is signaled to reopen its log files. When `LOG_TO_STDOUT`
+is set to `1`, there are no log files to rotate. Images extending this image can add their own logrotate configuration
+files to `/etc/logrotate.d` directory.
 
 ## GitHub mirror
 
